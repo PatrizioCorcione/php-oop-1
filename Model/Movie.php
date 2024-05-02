@@ -19,6 +19,6 @@ class Movie
 
   public function getFullInfo()
   {
-    return $this->title . ' ' . $this->year;
+    return $this->title . ' ' . $this->year . ' ' . implode(' ', $this->genres);
   }
 }
